@@ -1,0 +1,117 @@
+#  ____    _                       _          _____
+# / ___|  (_)  _ __ ___    _ __   | |   ___  |_   _|  _ __     __ _
+# \___ \  | | | '_ ` _ \  | '_ \  | |  / _ \   | |   | '_ \   / _` |
+#  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
+# |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
+#                         |_|                        |_|
+
+# Place Holders: %time% | %player% | %option%
+
+
+#Messages:
+prefix: "&c[&6SimpleTpa&c]"
+
+Console-Isnt-Player: "&6Консоль не может использовать &cTpa&6!"
+Disabled-World-Message: "&6Вы не можете телепортироваться в этом мире!"
+Disabled-Back-Command-Message: "&6Команда &c/back &6отключена!"
+Teleport-Message: "&6Телепорт будет через &c%time% &6секунд!"
+Teleport-Message-Back-To-Player: "&6Вы &cприняли &6запрос на телепортацию!"
+Player-Is-Null: "&6Этот игрок не в &cонлайне&6!"
+Back-Permission-Message: "&6У тебя нет права &c&osimpletpa.back.others&6!"
+Player-Doesnt-Have-Back-Point: "&6У игрока нет локаций для возврата!"
+Back-Permission-Message-1: "&6У тебя нету права &c&osimpletpa.back&6!"
+Player-Doesnt-Have-Back-Point-1: "&6У тебя нет локацияй для возврата!"
+Cooldown-Message: "&6Подожди %time% секунд для использования команды!"
+Death-Message: "&6Чтобы телепортироваться на точку смерти введи &c/back"
+Teleport-Message-Back-To-Sender-TPHEREALL: "&6Отправить запрос на телепорт &cвсем&6!"
+No-Permission-Message: "&6У тебя нет прав на использования этой команды."
+TpaToggle-Deactivated-Player-2: "&c%player% &6отключил &ctpa&6 для тебя!"
+TpaToggle-Activated-Player-2: "&c%player% &6включил &ctpa&6 для тебя!"
+TpaToggle-Deactivated-Player: "&6Ты &cотключил&6 tpa для &c%player%&6."
+TpaToggle-Activated-Player: "&6Ты &cвключил&6 tpa для &c%player%&6."
+TpaToggle-Deactivated: "&6Ты &cотключил."
+TpaToggle-Activated: "&6Ты &cвключил&6 tpa."
+TpaToggled-Player-Message: "&6У игрока &cотключена &6телепортация к себе!"
+Player-Is-Player: "&6Вы не можете телепортироваться к &cсамому себе&6!"
+Already-A-TP-Request: "&6Вы уже &cотправили запрос &6на телепортацию! Для отмены используй &c/tpcancel player "
+Tpa-Usage-Message: "&6Используй: &c/tpa (player)"
+Timed-Out-Message: "&6Ваш запрос на &cтелепортацию&6 истёк!"
+Sending-Teleport-Request: "&6Запрос на телепорт к &c%player%&6 отправлен. Для отмены введи &c/tpcancel player "
+Accept-Message: "&6Для принятия телепорта введи &c/tpaccept"
+Deny-Message: "&6Для отмены телепорта введи &c/tpdeny"
+Sent-Request-On-You: "&c%player% &6отправил вам запрос на телепорт!"
+Timed-Out-Here-Message: "&6Ваш запрос на телепорт сюда &cистек!"
+Sending-Teleport-Here-Request: "&6Отправка запроса на телепорт к &c%player%&6. Для отмены запроса ввведи &c/tpcancel player"
+Sent-Here-Request-On-You: "&c%player% &6Отправил вам запрос на телепорт!"
+Already-A-TPHere-Request: "&6Вы уже &cотправляли &6запрос на телепортацию! Для отмены введите в чате &c/tpcancel player"
+Tpa-Here-Usage-Message: "&6Используй: &c/tpahere (player)"
+No-Teleport-Requests: "&6У вас нет запросов на телепортацию!"
+Invalid-Player: "&6Кажется, телепортировавшийся к вам игрок покинул сервер!"
+Teleport-Message-Back-To-Sender: "&c%player% &6принял ваш запрос на телепортацию."
+Teleported-Message: "&6Телепортация!"
+Move-Cancel-Message: "&6Вы двинулись и запрос на телепорт отменен!"
+Rejected-Sender: "&6Игрок отклонил ваш &cзапрос&6!"
+Rejected-Message: "&6Вы отклонили &cзапрос&6!"
+Player-Is-In-Disabled-World: "&6Игрок к которому вы хотели телепортироваться находится в &cотключенном мире&6!"
+Tpcancel-Usage-Message: "&6Используй: &c/tpcancel (player)"
+Error-Cancelling-Request: "&6Вы не можете отменить свой &cзапрос!"
+Request-Cancelled: "&6Вы успешно отменили &cзапрос на телепортацию&6!"
+Death-Message-Coords: "&6Ваша точка смерти: &c%coords%&6!"
+## BUTTONS
+#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+
+#Accept Button Properties
+Accept-Button: "ПРИНЯТЬ"
+Accept-Button-Color: "GREEN"
+Accept-Button-Set-Bold: true
+Accept-Button-Description: "&6Нажми &2ПРИНЯТЬ &6запрос ТП!"
+
+#Middle Button Properties
+Middle-Button: " | "
+Middle-Button-Color: "GRAY"
+Middle-Button-Set-Bold: true
+Middle-Button-Description: "&7 <- Выбери одно -> "
+
+#Deny Button Properties
+Deny-Button: "ОТКЛОНИТЬ"
+Deny-Button-Color: "RED"
+Deny-Button-Set-Bold: true
+Deny-Button-Description: "&6Нажми &cОТКЛОНИТЬ &6запрос ТП!"
+
+#If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
+#Disabled Worlds:
+disabled-worlds:
+- 'disabledworld'
+
+#If you set anything to true, you will disable it.
+#Booleans
+disable-prefix: false
+
+disable-back-command: false
+disable-coords-message: false
+disable-back-on-death: false
+
+disable-accept-deny-buttons: false
+disable-particles: false
+disable-move-system: false
+
+# Everything works with SECONDS
+#Integers
+
+#This will delay the teleportation for X seconds
+delay-back-command: 5
+delay-teleportation: 5
+#Cooldowns
+back-cooldown: 10
+tpa-cooldown: 10
+tpahere-cooldown: 10
+tpahereall-cooldown: 10
+#To set a custom cooldown, you need to add a permission : simpletpa.cooldown.Y.X where Y is the command and X are the seconds.
+#The options for commands are: tpa | tpahere | back | tpahereall
+#Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
+#This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300
+
+
+
+#This will keep the teleport request alive for X seconds
+keep-alive: 60
