@@ -2,7 +2,7 @@
 ----- worked on -----
 
 ## Welcome
-You can download already translated configs or you can contribute to the community.
+You can download already translated configs or you can contribute to the them. Make sure that the config's version is equal to the current plugin's version!
 
 
 ## Translations
