@@ -10,4 +10,4 @@ If contributed to an already translated config or you translated one, you will r
 
 1. How to start? First of all, decide whether you want to contribute to an already translated config or you will make a new translation of the config to another language.
 !!! Please, DO NOT recreate already existing translated configs !!! This means if there is a Spanish translation already, do not create another Spanish translation. Instead, contribute to the translation.
-2. 
+2. Copy the **original** config.yml
