@@ -1,1 +1,117 @@
+#  ____    _                       _          _____
+# / ___|  (_)  _ __ ___    _ __   | |   ___  |_   _|  _ __     __ _
+# \___ \  | | | '_ ` _ \  | '_ \  | |  / _ \   | |   | '_ \   / _` |
+#  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
+# |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
+#                         |_|                        |_|
 
+# Place Holders: %time% | %player% | %option%
+
+
+#Messages:
+prefix: "&c[&6SimpleTpa&c]"
+
+Console-Isnt-Player: "&6Console kan geen &cSimpleTpa&6!"
+Disabled-World-Message: "&6Je kan geen &cSimpleTpa &6 gebruiken in deze wereld!"
+Disabled-Back-Command-Message: "&6Het command &c/back &6is uitgezet!"
+Teleport-Message: "&6Je word geteleporteerd in &c%time% &6seconden!"
+Teleport-Message-Back-To-Player: "&6Je &caccepteerd &6het teleporteren!"
+Player-Is-Null: "&6Deze speler is op het moment niet &conline&6!"
+Back-Permission-Message: "&6Je hebt hier geen permissie voor &c&osimpletpa.back.others&6!"
+Player-Doesnt-Have-Back-Point: "&6The speler heeft geen terug locatie!"
+Back-Permission-Message-1: "&6Je hebt niet de permissie &c&osimpletpa.back&6!"
+Player-Doesnt-Have-Back-Point-1: "&6Je hebt geen locaties om terug naar te gaan!"
+Cooldown-Message: "&6Je kan dit command voor %time% seconden niet gebruiken!"
+Death-Message: "&6om terug te teleporteren gebruik &c/back"
+Teleport-Message-Back-To-Sender-TPHEREALL: "&Je stuurt een teleport verzoek naar &ciedereen&6!"
+No-Permission-Message: "&6Je hebt geen machtigingen voor dit command"
+TpaToggle-Deactivated-Player-2: "&c%player% &6zetten &ctpa toggle&6 uit voor jou!"
+TpaToggle-Activated-Player-2: "&c%player% &6zetten &ctpa toggle&6 aan voor jou!"
+TpaToggle-Deactivated-Player: "&6Je hebt tpa toggle &c uitgezet voor &c%player%&6."
+TpaToggle-Activated-Player: "&6Je hebt tpa toggle &c aangezet voor &c%player%&6."
+TpaToggle-Deactivated: "&6Je hebt tpa togge &cuitgeschakeld&6!"
+TpaToggle-Activated: "&6Je hebt tpa togge &cingeschakeld&6!"
+TpaToggled-Player-Message: "&6Deze speler heeft teleportatie naar hem toe &cverboden&6"
+Player-Is-Player: "&6Je kan niet naar &cjezelf&6 teleporteren"
+Already-A-TP-Request: "&6Je hebt al een teleportatie verzoek verzonden! Als je dit niet wil doen doe &c/tpcancel "
+Tpa-Usage-Message: "&6Gebruik: &c/tpa (player)"
+Timed-Out-Message: "&6Je &cteleporteer verzoek&6 is verlopen!"
+Sending-Teleport-Request: "&6Je verstuurt een teleporteer verzoek naar: &c%player%&6. Als je dit niet wil doen doe &c/tpcancel player."
+Accept-Message: "&6Om dit teleporteer verzoek the accepteren doe: &c/tpaccept"
+Deny-Message: "&6Om dit teleporteer verzoek the accepteren doe: &c/tpdeny"
+Sent-Request-On-You: "&c%player% &6heeft je een teleporteer verzoek verzonden."
+Timed-Out-Here-Message: "&6Je verzoek om hier te teleporteren is &cverlopen&6!"
+Sending-Teleport-Here-Request: "&6Een teleporteer verzoek wordt verzonden naar &c%player%&6. Wil je dit niet doe dan: &c/tpcancel player"
+Sent-Here-Request-On-You: "&c%player% &6Heeft je een teleporteer verzoek verzonden!"
+Already-A-TPHere-Request: "&6Je hebt al een teleport &chere&6 verzoek verzonden! Als je dit niet wil doe dan &c/tpcancel player"
+Tpa-Here-Usage-Message: "&6Gebruik &c/tpahere (player)"
+No-Teleport-Requests: "&Je hebt geen teleporteer verzoeken!"
+Invalid-Player: "&6Het lijkt of de speler die dit heeft verzonden de server heeft verlaten!"
+Teleport-Message-Back-To-Sender: "&c%player% &6Heeft je teleporteer verzoek geaccepteered."
+Teleported-Message: "&6Geteleporteerd!"
+Move-Cancel-Message: "&Je bent verplaatst en het teleporteer verzoek is verwijderd!"
+Rejected-Sender: "&6De speler heeft je verzoek &cgenegeerd&6!"
+Rejected-Message: "&6Je hebt het verzoek &cgenegeerd&6!"
+Player-Is-In-Disabled-World: "&6De speler waar je heen wilt teleporteren is een &cuitgeschakelde wereld&6!"
+Tpcancel-Usage-Message: "&6Gebruik: &c/tpcancel (player)"
+Error-Cancelling-Request: "&6Je kan je eigen verzoek niet &cuitschakelen&6!"
+Request-Cancelled: "&6Je hebt het teleportatie verzoek succesvol &cgenegeerd&6!"
+Death-Message-Coords: "&6De cordinaten van je dood zijn &c%coords%&6!"
+## BUTTONS
+#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+
+#Accept Button Properties
+Accept-Button: "ACCEPTEER"
+Accept-Button-Color: "RED"
+Accept-Button-Set-Bold: true
+Accept-Button-Description: "&6Klik hier om het tp request the &cACCEPTEREN&6!"
+
+#Middle Button Properties
+Middle-Button: " | "
+Middle-Button-Color: "GRAY"
+Middle-Button-Set-Bold: true
+Middle-Button-Description: "&7 <- Kies tussen -> "
+
+#Deny Button Properties
+Deny-Button: "DENY"
+Deny-Button-Color: "RED"
+Deny-Button-Set-Bold: true
+Deny-Button-Description: "Klik hier om het tp request the &cWEIGEREN&6!"
+
+#If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
+#Disabled Worlds:
+disabled-worlds:
+  - 'disabledworld'
+
+#If you set anything to true, you will disable it.
+#Booleans
+disable-prefix: false
+
+disable-back-command: false
+disable-coords-message: false
+disable-back-on-death: false
+
+disable-accept-deny-buttons: false
+disable-particles: false
+disable-move-system: false
+
+# Everything works with SECONDS
+#Integers
+
+#This will delay the teleportation for X seconds
+delay-back-command: 5
+delay-teleportation: 5
+#Cooldowns
+back-cooldown: 10
+tpa-cooldown: 10
+tpahere-cooldown: 10
+tpahereall-cooldown: 10
+#To set a custom cooldown, you need to add a permission : simpletpa.cooldown.Y.X where Y is the command and  X are the seconds.
+#The options for commands are: tpa | tpahere | back | tpahereall
+#Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
+#This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300
+
+
+
+#This will keep the teleport request alive for X seconds
+keep-alive: 60
