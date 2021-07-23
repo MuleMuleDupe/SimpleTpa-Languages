@@ -1,0 +1,134 @@
+#  ____    _                       _          _____
+# / ___|  (_)  _ __ ___    _ __   | |   ___  |_   _|  _ __     __ _
+# \___ \  | | | '_ ` _ \  | '_ \  | |  / _ \   | |   | '_ \   / _` |
+#  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
+# |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
+#                         |_|                        |_|
+#Traduction par Master play.knightworld.fr
+
+# Place Holders: %time% | %player% | %option%
+
+
+#Messages:
+prefix: "&c[&6SimpleTpa&c]"
+
+Console-Isnt-Player: "&6La console ne peut pas utiliser &cSimpleTpa&6!"
+Disabled-World-Message: "&6Tu ne peux pas utiliser &cSimpleTpa &6dans ce monde!"
+Disabled-Back-Command-Message: "&6La commande &c/back &6est désactivée!"
+Teleport-Message: "&6Tu sera téléporté dans &c%time% &6secondes!"
+Teleport-Message-Back-To-Player: "&6Tu as &caccepté &6la demande de téléportation!"
+Player-Is-Null: "&6Le joueur n'est pas &conline&6!"
+Back-Permission-Message: "&6Tu n'as pas la permission &csimpletpa.back.others&6!"
+Player-Doesnt-Have-Back-Point: "&6Le joueur n'a pas d'endroit de back!"
+Back-Permission-Message-1: "&6Tu n'as pas la permission &c&osimpletpa.back&6!"
+Player-Doesnt-Have-Back-Point-1: "&6Tu n'as pas d'endroit de back!"
+Cooldown-Message: "&6Tu dois attendre %time% secondes avant de pouvoir utiliser cette commande!"
+Death-Message: "&6Pour te téléporter à ton endroit de mort, utilise la commande &c/back"
+Teleport-Message-Back-To-Sender-TPHEREALL: "&6Envoi d'une demande de téléportation à &ctout le monde&6!"
+No-Permission-Message: "&6Tu n'as pas la permission de faire cette commande!"
+TpaToggle-Deactivated-Player-2: "&c%player% &6a désactivé le &ctpa toggle&6 pour toi!"
+TpaToggle-Activated-Player-2: "&c%player% &6a activé le &ctpa toggle&6 pour toi!"
+TpaToggle-Deactivated-Player: "&6Tu as &cdésactivé &6le tpa toggle pour &c%player%&6."
+TpaToggle-Activated-Player: "&6Tu as &cactivé &6le tpa toggle pour &c%player%&6."
+TpaToggle-Deactivated: "&6Tu as &cdésactivé &6le tpa toggle."
+TpaToggle-Activated: "&6Tu as &cactivé &6le tpa toggle."
+TpaToggled-Player-Message: "&6Le joueur a &cdésactivé &6la téléportation à lui!"
+Player-Is-Player: "&6Tu ne peux pas te téléporter à &ctoi-même &6!"
+Already-A-TP-Request: "&6Tu as déjà &cenvoyé &6une demande de téléportation! Si tu veux l'annuler, fais &c/tpcancel player "
+Tpa-Usage-Message: "&6Utilise: &c/tpa (player)"
+Timed-Out-Message: "&6Ta &cdemande de téléporation &6a expirée!"
+Sending-Teleport-Request: "&6Demande de téléportation envoyée à &c%player%&6. Si tu veux annuler, fais &c/tpcancel player "
+Accept-Message: "&6Pour accepter la demande de téléportation, fais &c/tpaccept"
+Deny-Message: "&6Pour refuser la demande de téléportation, fais &c/tpdeny"
+Sent-Request-On-You: "&c%player% &6t'as envoyé une demande de téléportation!"
+Timed-Out-Here-Message: "&6Ta demande de téléportation a &cexpirée!"
+Sending-Teleport-Here-Request: "&6Demande de téléportation envoyée à &c%player%&6. Si tu veux l'annuler, fais &c/tpcancel player"
+Sent-Here-Request-On-You: "&c%player% &6t'as envoyé une demande de téléportation!"
+Already-A-TPHere-Request: "&6Tu as déjà &cenvoyé &6une demande de téléportation! Si tu veux l'annuler, fais &c/tpcancel player"
+Tpa-Here-Usage-Message: "&6Utilise: &c/tpahere (player)"
+No-Teleport-Requests: "&6Tu n'as aucune demande de téléportation!"
+Invalid-Player: "&6Le joueur qui s'est téléporté à toi a quitté le serveur!"
+Teleport-Message-Back-To-Sender: "&c%player% &6a accepté ta demande de téléportation."
+Teleported-Message: "&6Teleporté!"
+Move-Cancel-Message: "&6Tu as bougé et ta demande de téléportation a été annulée!"
+Rejected-Sender: "&6Le joueur a &crejeté &6ta demande !"
+Rejected-Message: "&6Tu as &crejeté &6la demande !"
+Player-Is-In-Disabled-World: "&6Le joueur auquel u voulais te téléporter est dans un &cmonde désactivé &6!"
+Tpcancel-Usage-Message: "&6Utilise: &c/tpcancel (player)"
+Error-Cancelling-Request: "&6Tu ne peux pas annuler ta propre &cdemande!"
+Request-Cancelled: "&6Tu as &cannulé &6la demande de téléportation !"
+Death-Message-Coords: "&6L'endroit de ta mort est en: &c%coords%&6!"
+Time-Left: "&6Tu as &c%seconds% &6secondes pour accepter ou refuser la demande"
+Damaged-Cancel-Message: "&6Tu as subi des dégats et la demande de téléportation a été annulée!"
+## BUTTONS
+#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+
+#Accept Button Properties
+Accept-Button: "ACCEPTER"
+Accept-Button-Color: "RED"
+Accept-Button-Set-Bold: true
+Accept-Button-Description: "&6Clique ici pour &cACCEPTER &6la demande de téléportation!"
+
+#Middle Button Properties
+Middle-Button: " | "
+Middle-Button-Color: "GRAY"
+Middle-Button-Set-Bold: true
+Middle-Button-Description: "&7 <- Choisis entre -> "
+
+#Deny Button Properties
+Deny-Button: "REFUSER"
+Deny-Button-Color: "RED"
+Deny-Button-Set-Bold: true
+Deny-Button-Description: "&6Clique ici pour &cREFUSER &6la demande de téléportation!"
+
+# If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
+#Disabled Worlds:
+disabled-worlds:
+  - 'disabledworld'
+
+# If you set anything to true, you will disable it.
+# B A C K    S E T T I N G S
+
+#If you want to disable the back command, then set this to true
+disable-back-command: false
+
+# If you want to disable the death coords message, then set this to true
+disable-coords-message: false
+
+# If you want to disable saving the death location, then set this to true
+disable-back-on-death: false
+
+# If you want to disable saving the TP Locations such as TPA, TPAHERE, then set this to true
+disable-back-on-tp: false
+
+#Booleans
+disable-prefix: false
+#If you set it to true, you will have to restart the server in order to apply it
+
+#  If you want to disable saving the accept or deny buttons, then set this to true
+disable-accept-deny-buttons: false
+#  If you want to disable saving the particles, then set this to true
+disable-particles: false
+#  If you want to disable saving the move system, then set this to true
+disable-move-system: false
+
+# If you want to disable the invincibility after teleporting, then set this to true
+disable-invincibility: false
+
+# Everything works with SECONDS
+#Integers
+invincibility-seconds: 5
+#This will keep the teleport request alive for X seconds
+keep-alive: 60
+#This will delay the teleportation for X seconds
+delay-back-command: 5
+delay-teleportation: 5
+#Cooldowns
+back-cooldown: 10
+tpa-cooldown: 10
+tpahere-cooldown: 10
+tpahereall-cooldown: 10
+#To set a custom cooldown, you need to add a permission : simpletpa.cooldown.Y.X where Y is the command and  X are the seconds.
+#The options for commands are: tpa | tpahere | back | tpahereall
+#Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
+#This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300 seconds
