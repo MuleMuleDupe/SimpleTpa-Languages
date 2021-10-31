@@ -9,7 +9,7 @@
 
 
 #Messages:
-prefix: "&c[&6TPA&c]"
+prefix: "&c[&6SimpleTpa&c]"
 
 Console-Isnt-Player: "&6La consola no pudo usar &cTpa&6!"
 Disabled-World-Message: "&6No puedes usar &cTpa &6en este mundo!"
