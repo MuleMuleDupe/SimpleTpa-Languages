@@ -1,0 +1,143 @@
+#  ____    _                       _          _____
+# / ___|  (_)  _ __ ___    _ __   | |   ___  |_   _|  _ __     __ _
+# \___ \  | | | '_ ` _ \  | '_ \  | |  / _ \   | |   | '_ \   / _` |
+#  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
+# |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
+#                         |_|                        |_|
+
+# Place Holders: %time% | %player% | %option%
+
+
+# !!!!!!!!!!!!!!!!
+# This options will support all plugins that use teleport stuff
+# If you want the plugin to log the previus teleport locations for the /back command from other plugins -> set this to true
+enable-teleport-logging: false
+# !!!!!!!!!!!!!!!!
+
+#If you set it to true, you will disable the prefix
+#Make sure to restart the server in order to apply it
+disable-prefix: false
+prefix: "&c[&6传送&c]"
+
+#Messages:
+# TO DISABLE A MESSAGE - SET IT TO - NONE
+# EXAMPLE:
+# Console-Isnt-Player: "none"
+Console-Isnt-Player: "&6控制台无法使用 &cSimpleTpa&6!"
+Disabled-World-Message: "&6这个世界无法使用 &c传送"
+Teleport-Message: "&6你将在 &c%time% &6秒后传送!"
+Teleport-Message-Back-To-Player: "&6你 &c接受了 &6传送请求!"
+Player-Is-Null: "&6玩家不 &c在线&6或不存在!"
+Player-Doesnt-Have-Back-Point: "&6The player doesn't have any back locations!"
+Player-Doesnt-Have-Back-Point-1: "&6你暂时没有返回坐标!"
+Cooldown-Message: "&6需要等待 %time% 秒才可再次使用!"
+Death-Message: "&6回到上次死亡的地方请使用 &c/back"
+Teleport-Message-Back-To-Sender-TPHEREALL: "&6给 &ceveryone&6发送传送到这里的请求!"
+No-Permission-Message: "&6你暂时没有权限用这个指令!"
+TpaToggle-Deactivated-Player-2: "&c%player% &6关闭了传送到你的请求!"
+TpaToggle-Activated-Player-2: "&c%player% &6开启了传送到你的请求!"
+TpaToggle-Deactivated-Player: "&6你 &c已关闭&6 the teleportation for &c%player%&6."
+TpaToggle-Activated-Player: "&6你 &c已开启&6 the teleportation for &c%player%&6."
+TpaToggle-Deactivated: "&6你 &c关闭了&6 the teleportation to you."
+TpaToggle-Activated: "&6你 &c开启了&6 the teleportation to you."
+TpaToggled-Player-Message: "&6这位玩家已经 &c暂时关闭&6传送到他的请求!"
+Player-Is-Player: "&6你不能传送到 &c自己&6!"
+Already-A-TP-Request: "&6你已经 &c发送过 &6a 传输请求! 如果想取消可以输入 &c/tpcancel player "
+Tpa-Usage-Message: "&6请这么使用: &c/tpa (player)"
+Timed-Out-Message: "&6你的 &c传送请求&6 已经超时结束!"
+Sending-Teleport-Request: "&6传送请求已发送给 &c%player%&6. 如果想取消可以输入 &c/tpcancel player "
+Accept-Message: "&6接收请求请输入 &c/tpaccept"
+Deny-Message: "&6婉拒传送请输入 &c/tpdeny"
+Sent-Request-On-You: "&c%player% &6给你发送了一个传送请求!"
+Timed-Out-Here-Message: "&6对方没有回应，请求 &c超时啦!"
+Sending-Teleport-Here-Request: "&6成功发送一个请求给 &c%player%&6. 对接受后将会传送过来，如果想取消可以输入 &c/tpcancel player"
+Sent-Here-Request-On-You: "&c%player% &6给你发送了一个到你这的请求!"
+Already-A-TPHere-Request: "&6你已经 &c发送过 &6一个到你这的请求了! 如果想取消可以输入 &c/tpcancel player"
+Tpa-Here-Usage-Message: "&6请使用: &c/tpahere (player)"
+No-Teleport-Requests: "&6你暂时没有传送请求!"
+Invalid-Player: "&6对方看上去离开了，传送结束!"
+Teleport-Message-Back-To-Sender: "&c%player% &6接受了你的请求."
+Teleported-Message: "&6传送成功!"
+Move-Cancel-Message: "&6你移动了位置，传送被打断!"
+Rejected-Sender: "&6对方婉拒了你的 &c请求&6!"
+Rejected-Message: "&6你成功婉拒了 &c这个请求&6!"
+Player-Is-In-Disabled-World: "&6你要传送的玩家所在的世界不支持 &c传送&6!"
+Tpcancel-Usage-Message: "&6请使用: &c/tpcancel (player)"
+Error-Cancelling-Request: "&6关闭自己的 &c请求出错!"
+Request-Cancelled: "&6成功关闭e &c传送请求&6!"
+Death-Message-Coords: "&6你的死亡点是: &c%coords%&6!"
+Time-Left: "&6你有 &c%seconds% &6秒来回应这个请求"
+Damaged-Cancel-Message: "&6你受到了伤害，传送被打断!"
+Different-Gamemode: "&6你无法使用传送指令，因为你的模式为 &cSPECTATOR!"
+
+## BUTTONS
+#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+
+#Accept Button Properties
+Accept-Button: "点击这里接受"
+Accept-Button-Color: "GREEN"
+Accept-Button-Set-Bold: true
+Accept-Button-Description: "&6点击这里 &c接受 &6这个传送请求!"
+
+#Middle Button Properties
+Middle-Button: " <<<- 在两者之间选择 ->>> "
+Middle-Button-Color: "RED"
+Middle-Button-Set-Bold: true
+Middle-Button-Description: "&7 <- 在两者之间选择 -> "
+
+#Deny Button Properties
+Deny-Button: "点击这里婉拒"
+Deny-Button-Color: "GREEN"
+Deny-Button-Set-Bold: true
+Deny-Button-Description: "&6点击这里 &c婉拒 &6这个传送请求!"
+
+# If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
+#Disabled Worlds:
+disabled-worlds:
+  - 'disabledworld'
+
+# If you set anything to true, you will disable it.
+# B A C K    S E T T I N G S
+
+#If you want to disable the back command, then set this to true
+disable-back-command: false
+
+# If you want to disable the death coords message, then set this to true
+disable-coords-message: false
+
+# If you want to disable saving the death location, then set this to true
+disable-back-on-death: false
+
+# If you want to disable saving the TP Locations such as TPA, TPAHERE, then set this to true
+disable-back-on-tp: false
+
+#Booleans
+#  If you want to disable checking for gamemode if equals to spectator, then set this to true
+disable-gamemode-check: false
+#  If you want to disable saving the accept or deny buttons, then set this to true
+disable-accept-deny-buttons: false
+#  If you want to disable saving the particles, then set this to true
+disable-particles: false
+#  If you want to disable saving the move system, then set this to true
+disable-move-system: false
+
+# If you want to disable the invincibility after teleporting, then set this to true
+disable-invincibility: false
+
+# Everything works with SECONDS
+#Integers
+invincibility-seconds: 5
+#This will keep the teleport request alive for X seconds
+keep-alive: 60
+#This will delay the teleportation for X seconds
+delay-back-command: 5
+delay-teleportation: 5
+#Cooldowns
+back-cooldown: 10
+tpa-cooldown: 10
+tpahere-cooldown: 10
+tpahereall-cooldown: 10
+#To set a custom cooldown, you need to add a permission : simpletpa.cooldown.Y.X where Y is the command and  X are the seconds.
+#The options for commands are: tpa | tpahere | back | tpahereall
+#Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
+#This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300 seconds
