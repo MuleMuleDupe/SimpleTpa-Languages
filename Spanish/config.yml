@@ -8,79 +8,90 @@
 # Place Holders: %time% | %player% | %option%
 
 
-#Messages:
+# !!!!!!!!!!!!!!!!
+# This options will support all plugins that use teleport stuff
+# If you want the plugin to log the previus teleport locations for the /back command from other plugins -> set this to true
+enable-teleport-logging: false
+# !!!!!!!!!!!!!!!!
+
+#If you set it to true, you will disable the prefix
+#Make sure to restart the server in order to apply it
+disable-prefix: false
 prefix: "&c[&6SimpleTpa&c]"
 
-Console-Isnt-Player: "&6La consola no pudo usar &cTpa&6!"
-Disabled-World-Message: "&6No puedes usar &cTpa &6en este mundo!"
-Disabled-Back-Command-Message: "&6este comando &c/back &6esta desabilitado!"
-Teleport-Message: "&6Te vas a teleportar en &c%time% &6segundos!"
-Teleport-Message-Back-To-Player: "&6Tu &caceptaste &6la solicitud de tp!"
+#Messages:
+# TO DISABLE A MESSAGE - SET IT TO - NONE
+# EXAMPLE:
+# Console-Isnt-Player: "none"
+Console-Isnt-Player: "&6La consola no ha podido usar &cSimpleTpa&6!"
+Disabled-World-Message: "&6No puedes usar &cSimpleTpa &6en este mundo!"
+Teleport-Message: "&6Te vas a teleportar. No te muevas!. &c%time% &6seconds!"
+Teleport-Message-Back-To-Player: "&6Tu &caceptaste&6la solicitud de tp!"
 Player-Is-Null: "&6Este jugador no esta &conline&6!"
-Back-Permission-Message: "&6No tienes permiso &c&osimpletpa.back.others&6!"
 Player-Doesnt-Have-Back-Point: "&6Este jugador no tiene zonas de muerte!"
-Back-Permission-Message-1: "&6No tiene permiso &c&osimpletpa.back&6!"
-Player-Doesnt-Have-Back-Point-1: "&6No tienes locaciones de muerte!"
-Cooldown-Message: "&6No puedes usar el comando por %time% segundos!"
+Player-Doesnt-Have-Back-Point-1: "&6You don't have any back locations!"
+Cooldown-Message: "&6No puedes usar el comando por %time% seconds yet!"
 Death-Message: "&6Para volver a tu zona de muerte usa &c/back"
 Teleport-Message-Back-To-Sender-TPHEREALL: "&6Enviando solicitud de TP a &ceveryone&6!"
 No-Permission-Message: "&6No tienes permiso para usar este comando"
 TpaToggle-Deactivated-Player-2: "&c%player% &6deshabilito el &ctpa toggle&6 para ti!"
-TpaToggle-Activated-Player-2: "&c%player% &6habilito el &ctpa toggle&6 para ti!"
-TpaToggle-Deactivated-Player: "&6You &cdisabled&6 el tpa para &c%player%&6."
-TpaToggle-Activated-Player: "&6You &cenabled&6 el tpa para &c%player%&6."
-TpaToggle-Deactivated: "&6You &cdisabled&6 the tpa toggle."
-TpaToggle-Activated: "&6You &cenabled&6 the tpa toggle."
-TpaToggled-Player-Message: "&6The player has &cdisabled &6the teleportation to him!"
+TpaToggle-Activated-Player-2: "&c%player% &6 ha habilitado el &ctpa toggle&6 para ti!"
+TpaToggle-Deactivated-Player: "&6Tu &cdesabilitaste&6 el tpa para &c%player%&6."
+TpaToggle-Activated-Player: "&6Tu &chabilitaste&6 el tpa para &c%player%&6."
+TpaToggle-Deactivated: "&6Tu &cdesabilitaste&6 la palanca del tpa."
+TpaToggle-Activated: "&6Tu &cactivaste&6 la palanca del tpa"
+TpaToggled-Player-Message: "&6El jugador tiene &cdisabled &6the teleportation to him!"
 Player-Is-Player: "&6No puedes teletransportarte &ca ti mismo&6!"
-Already-A-TP-Request: "&6Tu ya &cenviaste &6Una solicitud de TP Si quieres cancelarlo &c/tpcancel (player)"
+Already-A-TP-Request: "&6Tu ya &cenviaste &6Una solicitud de TP Si quieres cancelarlo &c/tpcancel player "
 Tpa-Usage-Message: "&6Por favor usa: &c/tpa (player)"
-Timed-Out-Message: "&6Tu &csolicitud de TPA &6vencio!"
-Sending-Teleport-Request: "&6Enviando solicitud a &c%player%&6. Si quieres cancelarlo: &c/tpcancel (player)"
-Accept-Message: "&6Para aceptar la solicitud, escribe &c/tpaccept"
+Timed-Out-Message: "&6Tu &cteleport&6 ha caducado!"
+Sending-Teleport-Request: "&6Enviando solicitud a &c%player%&6. Si quieres cancelarlo: &c/tpcancel player "
+Accept-Message: "&6Para aceptar la solicitud de teletransporte, escribe &c/tpaccept"
 Deny-Message: "&6Para cancelar la solicitud, escribe &c/tpdeny"
-Sent-Request-On-You: "&c%player% &6te envio una solicitud de TPA!"
-Timed-Out-Here-Message: "&6Your teleport here request has &ctimed out!"
-Sending-Teleport-Here-Request: "&6Enviando solicitud de TPA a &c%player%&6. Si quieres cancelarla, usa &c/tpcancel (player)"
-Sent-Here-Request-On-You: "&c%player% &6te envio una solicitud de TPA!"
-Already-A-TPHere-Request: "&6Tu ya &cenviaste &6una solicitud de TPA! Si quieres cancelarla, usa &c/tpcancel (player)"
-Tpa-Here-Usage-Message: "&6Please use: &c/tpahere (player)"
+Sent-Request-On-You: "&c%player% &6te ha enviado una solicitud de teletransporte!"
+Timed-Out-Here-Message: "&6Su solicitud de teletransporte aquí ha &ccaducado!"
+Sending-Teleport-Here-Request: "&6Enviar una solicitud de teletransporte aquí a &c%player%&6. Si quieres cancelarlo usa &c/tpcancel player"
+Sent-Here-Request-On-You: "&c%player% &6te ha enviado una solicitud de teletransporte aquí!"
+Already-A-TPHere-Request: "&6Ya has &cenviado &6una solicitud de teletransporte aquí! Si quieres cancelarlo usa &c/tpcancel player"
+Tpa-Here-Usage-Message: "&6Por favor usa: &c/tpahere (player)"
 No-Teleport-Requests: "&6No tienes solicitudes de tpa!"
-Invalid-Player: "&6El jugador que quieres hacerle tp se salio del servidor!"
+Invalid-Player: "&6El jugador que quieres tp se salio del servidor!"
 Teleport-Message-Back-To-Sender: "&c%player% &6has aceptado la solicitud de tp."
-Teleported-Message: "&6Listo capo!"
-Move-Cancel-Message: "&6Te has movido! La solicitud se cancelo"
-Rejected-Sender: "&6El jugarode rechazo tu &csolicitud&6!"
+Teleported-Message: "&6Teletransportado!"
+Move-Cancel-Message: "&6Te has movido! La solicitud se ha cancelado"
+Rejected-Sender: "&6El jugador ha rechazado tu &csolicitud&6!"
 Rejected-Message: "&6Rechazaste la &csolicitud&6!"
 Player-Is-In-Disabled-World: "&6El jugador al que quieres hacerte tp &cdisabled world&6!"
 Tpcancel-Usage-Message: "&6Por favor usa: &c/tpcancel (player)"
 Error-Cancelling-Request: "&6No puedes cancelar tu propia &csolicitud!"
 Request-Cancelled: "&6Cancelaste exitosamente el &ctpa&6!"
-Death-Message-Coords: "&6Tu locacion de muerte es: &c%coords%&6!"
-Time-Left: "&6Tienes &c%seconds% &6segundos para aceptar o rechazar"
-Damaged-Cancel-Message: "&6Tu has recivido daño, la solicitud de teletransporte se cancelo!"
+Death-Message-Coords: "&6Tu localización de muerte es: &c%coords%&6!"
+Time-Left: "&6Tienes &c%seconds% &6segundos para aceptar o denegar la solicitud"
+Damaged-Cancel-Message: "&6Fuiste dañado y la solicitud de teletransporte ha sido eliminada!"
+Different-Gamemode: "&6No puedes usar ningún comando de teletransportación, porque estás en modo &cESPECTADOR&6!"
+
 ## BUTTONS
 #Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
 
 #Accept Button Properties
 Accept-Button: "ACEPTAR"
-Accept-Button-Color: "GREEN"
+Accept-Button-Color: "RED"
 Accept-Button-Set-Bold: true
-Accept-Button-Description: "&6Haz click en &cACEPTAR &6para el TP!"
+Accept-Button-Description: "&6Haz click aquí para &caceptar&6 la solicitud de tpa!"
 
 #Middle Button Properties
 Middle-Button: " | "
 Middle-Button-Color: "GRAY"
 Middle-Button-Set-Bold: true
-Middle-Button-Description: "&7 <- Choose between -> "
+Middle-Button-Description: "&7 <- Escoger entre -> "
 
 #Deny Button Properties
-Deny-Button: "RECHAZAR"
+Deny-Button: "DENEGAR"
 Deny-Button-Color: "RED"
 Deny-Button-Set-Bold: true
-Deny-Button-Description: "&6Haz click en &cRECHAZAR &6para no hacer el TP!"
+Deny-Button-Description: "&6Haz click aquí para &cdenegar&6 la solicitud de tpa!"
 
-# If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
+#If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
 #Disabled Worlds:
 disabled-worlds:
   - 'disabledworld'
@@ -89,21 +100,20 @@ disabled-worlds:
 # B A C K    S E T T I N G S
 
 #If you want to disable the back command, then set this to true
-disable-back-command: true
+disable-back-command: false
 
 # If you want to disable the death coords message, then set this to true
-disable-coords-message: true
+disable-coords-message: false
 
 # If you want to disable saving the death location, then set this to true
-disable-back-on-death: true
+disable-back-on-death: false
 
 # If you want to disable saving the TP Locations such as TPA, TPAHERE, then set this to true
-disable-back-on-tp: true
+disable-back-on-tp: false
 
 #Booleans
-disable-prefix: false
-#If you set it to true, you will have to restart the server in order to apply it
-
+#  If you want to disable checking for gamemode if equals to spectator, then set this to true
+disable-gamemode-check: false
 #  If you want to disable saving the accept or deny buttons, then set this to true
 disable-accept-deny-buttons: false
 #  If you want to disable saving the particles, then set this to true
@@ -131,6 +141,3 @@ tpahereall-cooldown: 10
 #The options for commands are: tpa | tpahere | back | tpahereall
 #Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
 #This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300 seconds
-
-
-
