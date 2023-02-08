@@ -1,0 +1,146 @@
+#  ____    _                       _          _____
+# / ___|  (_)  _ __ ___    _ __   | |   ___  |_   _|  _ __     __ _
+# \___ \  | | | '_ ` _ \  | '_ \  | |  / _ \   | |   | '_ \   / _` |
+#  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
+# |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
+#                         |_|                        |_|
+
+# Place Holders: %time% | %player% | %option%
+
+
+# !!!!!!!!!!!!!!!!
+# This options will support all plugins that use teleport stuff
+# If you want the plugin to log the previus teleport locations for the /back command from other plugins -> set this to true
+enable-teleport-logging: false
+# !!!!!!!!!!!!!!!!
+
+#If you set it to true, you will disable the prefix
+#Make sure to restart the server in order to apply it
+disable-prefix: false
+prefix: "&c[&6SimpleTpa&c]"
+
+#Messages:
+# TO DISABLE A MESSAGE - SET IT TO - NONE
+# EXAMPLE:
+# Console-Isnt-Player: "none"
+Console-Isnt-Player: "&6Konsol &cSimpleTpa&6 kullanamaz!"
+Disabled-World-Message: "&6Bu dünyada &cSimpleTpa &6 kullanamazsın!"
+Teleport-Message: "&6Siz &c%time% &6saniye içinde ışınlanacaksınız!"
+Teleport-Message-Back-To-Player: "&6Siz &cışınlanma isteğini &6kabul ettiniz!"
+Player-Is-Null: "&6Bu kullanıcı &cçevrimdışı&6!"
+Player-Doesnt-Have-Back-Point: "&6Herhangi bir geri dönüş noktanız bulunmamakta"
+Player-Doesnt-Have-Back-Point-1: "&6Geri dönüş noktanız yok"
+Cooldown-Message: "&6Bu komudu %time% saniye boyunca kullanamazsınız!"
+Death-Message: "&6Öldüğünüz noktaya geri dönmek için &c/back"
+Teleport-Message-Back-To-Sender-TPHEREALL: "&6Siz &cherkese&6 ışınlanma isteği gönderdiniz&6!"
+No-Permission-Message: "&6Bu komudu kullanmak için gerekli izniniz bulunmamakta&6!"
+TpaToggle-Deactivated-Player-2: "&c%player% &6 ışınlanma talebini reddetti&6!"
+TpaToggle-Activated-Player-2: "&c%player% &6 ışınlanma talebini kabul etti&6!"
+TpaToggle-Deactivated-Player: "&6Siz &c%player%&6 oyuncusuna olan ışınlanma talebinizi &creddettiniz&6."
+TpaToggle-Activated-Player: "&6Siz &c%player%&6 oyuncusuna olan ışınlanma talebinizi &ckabul ettiniz&6."
+TpaToggle-Deactivated: "&6Siz ışınlanma isteklerinizi &creddettiniz&6."
+TpaToggle-Activated: "&6Siz ışınlanma isteklerinizi &ckabul ettiniz&6."
+TpaToggled-Player-Message: "&6Oyuncu başka bir oyuncuya ışınlanmayı &ckapattı &6!"
+Player-Is-Player: "&6Kendine &cışınlanamazsın&6!"
+Already-A-TP-Request: "&6Siz zaten &6bir ışınlanma isteği &cgönderdiniz. Eğer reddetmek istiyorsanız &c/tpcancel [hedef oyuncu]"
+Tpa-Usage-Message: "&6Lütfen: &c/tpa (player) şeklinde kullanın"
+Timed-Out-Message: "&6Sizin &cışınlanma talebiniz &6 zaman aşımına uğradı!"
+Sending-Teleport-Request: "&6Siz &c%player%&6adlı oyuncuya ışınlanma isteği gönderdiniz. reddetmek isterseniz &c/tpcancel [hedef oyuncu]"
+Accept-Message: "&6Işınlanma talebini kabul etmek için, &c/tpaccept &6Yazın!"
+Deny-Message: "&6Işınlanma talebini reddetmek için, &c/tpdeny &6Yazın!"
+Sent-Request-On-You: "&c%player% &6sana ışınlanma talebi gönderdi!"
+Timed-Out-Here-Message: "&6Sizin kendinize çekme isteğiniz &czaman aşımına uğradı!"
+Sending-Teleport-Here-Request: "&6Siz &c%player%&6 oyuncusuna kendinize çekme talebi gönderdiniz. If Reddetmek için &c/tpcancel [hedef oyuncu] "
+Sent-Here-Request-On-You: "&c%player% &6Size kendine çekme talebi gönderdi!"
+Already-A-TPHere-Request: "&6Sizin zaten bir kendinize çekme talebi &cgöndermişsiniz &6!Reddetmek için &c/tpcancel [hedef oyuncu]"
+Tpa-Here-Usage-Message: "&6Lütfen &c/tpahere (oyuncu) şeklinde kullanın"
+No-Teleport-Requests: "&6Sizin herhangi bir ışınlanma talebiniz bulunmamakta!"
+Invalid-Player: "&6Size ışınlanan oyuncu sunucudan çıkmış görünüyor!"
+Teleport-Message-Back-To-Sender: "&c%player% &6sizin ışınlanma talebinizi kabul etti."
+Teleported-Message: "&6Işınlandınız!"
+Move-Cancel-Message: "&6Hareket ettiğiniz için ışınlanma talebiniz reddedildi!"
+Rejected-Sender: "&6Talep gönderdiğiniz oyuncu sizin ışınlanma talebinizi &creddetti&6!"
+Rejected-Message: "&6Işınlanma talebinizi &creddettiniz&6!"
+Player-Is-In-Disabled-World: "&6Işınlanmaya çalıştığınız oyuncu &cışınlanmaya kapalı dünyada&6!"
+Tpcancel-Usage-Message: "&6Lütfen &c/tpcancel (player) şeklinde kullanın"
+Error-Cancelling-Request: "&6Kendi talebinizi iptal &cedemezsiniz!"
+Request-Cancelled: "&6Başarılı bir şekilde &cışınlanma talebini &6reddettiniz!"
+Death-Message-Coords: "&6Sizin ölüm koordinatlarınız: &c%coords%&6!"
+Time-Left: "&6Talebi kabul etmek veya reddetmek için &c%seconds% &6kaldı!"
+Damaged-Cancel-Message: "&6Hasar aldığınız için ışınlanma talebiniz reddedildi!"
+Different-Gamemode: "&6Işınlanma komutları kullanamazsınız, çünkü &cİZLEYİCİ &6modundasınız!"
+World-Doesnt-Exists-Or-Unloaded: "&6Işınlanmaya çalıştığınız dünya yok veya yüklenmedi!"
+## BUTTONS
+#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+
+#Accept Button Properties
+Accept-Button: "KABUL ET"
+Accept-Button-Color: "RED"
+Accept-Button-Set-Bold: true
+Accept-Button-Description: "&6Buraya tıklayarak ışınlanma isteğini &cKABUL &6et!"
+
+#Middle Button Properties
+Middle-Button: " | "
+Middle-Button-Color: "GRAY"
+Middle-Button-Set-Bold: true
+Middle-Button-Description: "&7 <- Birini seçin -> "
+
+#Deny Button Properties
+Deny-Button: "REDDET"
+Deny-Button-Color: "RED"
+Deny-Button-Set-Bold: true
+Deny-Button-Description: "&6Buraya tıklayarak ışınlanma isteğini &cREDDET &6!"
+
+# If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
+#Disabled Worlds:
+disabled-worlds:
+  - 'disabledworld'
+
+# If you set anything to true, you will disable it.
+# B A C K    S E T T I N G S
+
+#If you want to disable the back command, then set this to true
+disable-back-command: false
+
+# If you want to disable the death coords message, then set this to true
+disable-coords-message: false
+
+# If you want to disable saving the death location, then set this to true
+disable-back-on-death: false
+
+# If you want to disable saving the TP Locations such as TPA, TPAHERE, then set this to true
+disable-back-on-tp: false
+
+#Booleans
+#  If you want to disable checking for gamemode if equals to spectator, then set this to true
+disable-gamemode-check: false
+#  If you want to disable saving the accept or deny buttons, then set this to true
+disable-accept-deny-buttons: false
+#  If you want to disable saving the particles, then set this to true
+disable-particles: false
+#  If you want to disable saving the move system, then set this to true
+disable-move-system: false
+
+# If you want to disable the invincibility after teleporting, then set this to true
+disable-invincibility: false
+
+# Everything works with SECONDS
+#Integers
+invincibility-seconds: 5
+#This will keep the teleport request alive for X seconds
+keep-alive: 60
+#This will delay the teleportation for X seconds
+delay-back-command: 5
+delay-teleportation: 5
+#Cooldowns
+back-cooldown: 10
+tpa-cooldown: 10
+tpahere-cooldown: 10
+tpahereall-cooldown: 10
+#To set a custom cooldown, you need to add a permission : simpletpa.cooldown.Y.X where Y is the command and  X are the seconds.
+#The options for commands are: tpa | tpahere | back | tpahereall
+#Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
+#This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300 seconds
+
+
+
