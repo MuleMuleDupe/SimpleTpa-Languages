@@ -4,7 +4,7 @@
 #  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
 # |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
 #                         |_|                        |_|
-# Translated by Velar#3069 | Tradotto da Velar#3069
+# Translated by ARAR#1683 | Tradotto da ARAR#1683
 # Place Holders: %time% | %player% | %option%
 
 
@@ -20,8 +20,8 @@ disable-prefix: false
 prefix: "&c[&6SimpleTpa&c]"
 
 #Messages:
-# TO DISABLE A MESSAGE - SET IT TO - NONE
-# EXAMPLE:
+# Per disabilitare un messaggio - IMPOSTALO A - NONE
+# ESEMPIO:
 # Console-Isnt-Player: "none"
 Console-Isnt-Player: "&6La console non puo'' usare &cSimpleTpa&6!"
 Disabled-World-Message: "&6Non puoi usare il tpa in questo mondo"
@@ -70,58 +70,58 @@ Time-Left: "&6Hai &c%seconds% &6secondi per accettare il tpa"
 Damaged-Cancel-Message: "&6Sei stato danneggiato e il tpa e'' stato cancellato!"
 Different-Gamemode: "&6Non puoi usare nessun comando ti tpa, poiche'' sei in modalita'' spettatore!"
 World-Doesnt-Exists-Or-Unloaded: "&6Il mondo in cui stai provando a teletrasportarti non esiste o non e'' caricato!"
-## BUTTONS
-#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+## BOTTONI
+#Qui trovi i colori: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
 
-#Accept Button Properties
+#Proprieta bottone accetta
 Accept-Button: "ACCETTA"
 Accept-Button-Color: "GREEN"
 Accept-Button-Set-Bold: true
 Accept-Button-Description: "&6Clicca qui per &aACCETTARE &6la richiesta di tpa!"
 
-#Middle Button Properties
+#Proprieta bottone centrale
 Middle-Button: " | "
 Middle-Button-Color: "GRAY"
 Middle-Button-Set-Bold: true
 Middle-Button-Description: "&7 <- Scegli fra i due-> "
 
-#Deny Button Properties
+#Proprieta bottone rifiuta
 Deny-Button: "RIFIUTA"
 Deny-Button-Color: "RED"
 Deny-Button-Set-Bold: true
 Deny-Button-Description: "&6Clicca qui per &cRIFIUTARE &6la richiesta di tpa!"
 
-# If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
+# Se vuoi disabilitare SimpleTpa in un mondo a tua scelta usa l'elenco qui sotto - 'NameOfTheWorld'
 #Disabled Worlds:
 disabled-worlds:
   - 'disabledworld'
 
-# If you set anything to true, you will disable it.
+# Se imposti qualcosa su true, lo disabiliterai.
 # B A C K    S E T T I N G S
 
-#If you want to disable the back command, then set this to true
+#Se vuoi disabilitare il comando back, impostalo su true
 disable-back-command: false
 
-# If you want to disable the death coords message, then set this to true
+# Se vuoi disabilitare il messaggio delle coordinate della morte, impostalo su true
 disable-coords-message: false
 
-# If you want to disable saving the death location, then set this to true
+# Se vuoi disabilitare il salvataggio del luogo della morte, impostalo su true
 disable-back-on-death: false
 
-# If you want to disable saving the TP Locations such as TPA, TPAHERE, then set this to true
+# Se desideri disabilitare il salvataggio delle posizioni TP come TPA, TPAHERE, imposta questo su true
 disable-back-on-tp: false
 
 #Booleans
-#  If you want to disable checking for gamemode if equals to spectator, then set this to true
+#  Se vuoi disabilitare il controllo per la modalità di gioco se uguale a spettatore, imposta questo su true
 disable-gamemode-check: false
-#  If you want to disable saving the accept or deny buttons, then set this to true
+#  Se vuoi disabilitare il salvataggio dei pulsanti accetta o nega, imposta questo su true
 disable-accept-deny-buttons: false
-#  If you want to disable saving the particles, then set this to true
+#  Se vuoi disabilitare il salvataggio delle particelle, imposta questo su true
 disable-particles: false
-#  If you want to disable saving the move system, then set this to true
+#  Se vuoi disabilitare il salvataggio del sistema di spostamento, imposta questo su true
 disable-move-system: false
 
-# If you want to disable the invincibility after teleporting, then set this to true
+# Se vuoi disabilitare l'invincibilità dopo il teletrasporto, impostalo su true
 disable-invincibility: false
 
 # Everything works with SECONDS
@@ -141,6 +141,5 @@ tpahereall-cooldown: 10
 #The options for commands are: tpa | tpahere | back | tpahereall
 #Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
 #This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300 seconds
-
 
 
