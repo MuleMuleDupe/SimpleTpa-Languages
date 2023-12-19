@@ -5,7 +5,7 @@
 # |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
 #                         |_|                        |_|
 
-# Place Holders: %time% | %player% | %option%
+# Заполнители: %time% | %player% | %option%
 
 
 #Messages:
@@ -29,89 +29,83 @@ TpaToggle-Deactivated-Player-2: "&c%player% &6отключил &ctpa&6 для т
 TpaToggle-Activated-Player-2: "&c%player% &6включил &ctpa&6 для тебя!"
 TpaToggle-Deactivated-Player: "&6Ты &cотключил&6 tpa для &c%player%&6."
 TpaToggle-Activated-Player: "&6Ты &cвключил&6 tpa для &c%player%&6."
-TpaToggle-Deactivated: "&6Ты &cотключил."
+TpaToggle-Deactivated: "&6Ты &cотключил tpa."
 TpaToggle-Activated: "&6Ты &cвключил&6 tpa."
-TpaToggled-Player-Message: "&6У игрока &cотключена &6телепортация к себе!"
+TpaToggled-player-Message: "&6У игрока &cотключена &6телепортация к себе!"
 Player-Is-Player: "&6Вы не можете телепортироваться к &cсамому себе&6!"
-Already-A-TP-Request: "&6Вы уже &cотправили запрос &6на телепортацию! Для отмены используй &c/tpcancel player "
-Tpa-Usage-Message: "&6Используй: &c/tpa (player)"
+Already-A-TP-Request: "&6Вы уже &cотправили запрос &6на телепортацию! Для отмены используй &c/tpcancel игрок "
+Tpa-Usage-Message: "&6Используй: &c/tpa (игрок)"
 Timed-Out-Message: "&6Ваш запрос на &cтелепортацию&6 истёк!"
-Sending-Teleport-Request: "&6Запрос на телепорт к &c%player%&6 отправлен. Для отмены введи &c/tpcancel player "
+Sending-Teleport-Request: "&6Запрос на телепорт к &cигрок&6 отправлен. Для отмены введи &c/tpcancel игрок "
 Accept-Message: "&6Для принятия телепорта введи &c/tpaccept"
 Deny-Message: "&6Для отмены телепорта введи &c/tpdeny"
-Sent-Request-On-You: "&c%player% &6отправил вам запрос на телепорт!"
+Sent-Request-On-You: "&cигрок &6отправил вам запрос на телепорт!"
 Timed-Out-Here-Message: "&6Ваш запрос на телепорт сюда &cистек!"
-Sending-Teleport-Here-Request: "&6Отправка запроса на телепорт к &c%player%&6. Для отмены запроса ввведи &c/tpcancel player"
-Sent-Here-Request-On-You: "&c%player% &6Отправил вам запрос на телепорт!"
-Already-A-TPHere-Request: "&6Вы уже &cотправляли &6запрос на телепортацию! Для отмены введите в чате &c/tpcancel player"
-Tpa-Here-Usage-Message: "&6Используй: &c/tpahere (player)"
+Sending-Teleport-Here-Request: "&6Отправка запроса на телепорт к &c%player%&6. Для отмены запроса введи &c/tpcancel игрок"
+Sent-Here-Request-On-You: "&cигрок &6Отправил вам запрос на телепорт!"
+Already-A-TPHere-Request: "&6Вы уже &cотправляли &6запрос на телепортацию! Для отмены введите в чате &c/tpcancel игрок"
+Tpa-Here-Usage-Message: "&6Используй: &c/tpahere (игрок)"
 No-Teleport-Requests: "&6У вас нет запросов на телепортацию!"
-Invalid-Player: "&6Кажется, телепортировавшийся к вам игрок покинул сервер!"
+Invalid-Player: "&6Кажется, игрок покинул сервер!"
 Teleport-Message-Back-To-Sender: "&c%player% &6принял ваш запрос на телепортацию."
-Teleported-Message: "&6Телепортация!"
+Teleported-Message: "&6Телепортарую!"
 Move-Cancel-Message: "&6Вы двинулись и запрос на телепорт отменен!"
 Rejected-Sender: "&6Игрок отклонил ваш &cзапрос&6!"
 Rejected-Message: "&6Вы отклонили &cзапрос&6!"
 Player-Is-In-Disabled-World: "&6Игрок к которому вы хотели телепортироваться находится в &cотключенном мире&6!"
-Tpcancel-Usage-Message: "&6Используй: &c/tpcancel (player)"
+Tpcancel-Usage-Message: "&6Используй: &c/tpcancel (игрок)"
 Error-Cancelling-Request: "&6Вы не можете отменить свой &cзапрос!"
 Request-Cancelled: "&6Вы успешно отменили &cзапрос на телепортацию&6!"
 Death-Message-Coords: "&6Ваша точка смерти: &c%coords%&6!"
-## BUTTONS
-#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+## КНОПКИ
+#Здесь ты можешь найти цвета https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
 
-#Accept Button Properties
+#Свойства кнопки принять
 Accept-Button: "ПРИНЯТЬ"
 Accept-Button-Color: "GREEN"
 Accept-Button-Set-Bold: true
 Accept-Button-Description: "&6Нажми &2ПРИНЯТЬ &6запрос ТП!"
 
-#Middle Button Properties
+#Свойства кнопки посередине
 Middle-Button: " | "
 Middle-Button-Color: "GRAY"
 Middle-Button-Set-Bold: true
 Middle-Button-Description: "&7 <- Выбери одно -> "
 
-#Deny Button Properties
+#Свойства кнопки отклонить
 Deny-Button: "ОТКЛОНИТЬ"
 Deny-Button-Color: "RED"
 Deny-Button-Set-Bold: true
 Deny-Button-Description: "&6Нажми &cОТКЛОНИТЬ &6запрос ТП!"
 
-#If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
-#Disabled Worlds:
+#Если ты хочешь отключить SimpleTpa в разных мирах сделай так - 'ИмяМира'
+#Выключенные мира:
 disabled-worlds:
 - 'disabledworld'
 
-#If you set anything to true, you will disable it.
-#Booleans
+#Если ты что либо поставишь на true, ты выключишь это
 disable-prefix: false
-
 disable-back-command: false
 disable-coords-message: false
 disable-back-on-death: false
-
 disable-accept-deny-buttons: false
 disable-particles: false
 disable-move-system: false
+# Все работает в СЕКУНДАХ
+#Числа
 
-# Everything works with SECONDS
-#Integers
-
-#This will delay the teleportation for X seconds
+#Это отложит телепортацию на X секунд
 delay-back-command: 5
 delay-teleportation: 5
-#Cooldowns
+
+#Кулдауны
 back-cooldown: 10
 tpa-cooldown: 10
 tpahere-cooldown: 10
 tpahereall-cooldown: 10
-#To set a custom cooldown, you need to add a permission : simpletpa.cooldown.Y.X where Y is the command and X are the seconds.
-#The options for commands are: tpa | tpahere | back | tpahereall
-#Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
-#This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300
-
-
-
-#This will keep the teleport request alive for X seconds
+#Чтобы сделать кастомный кулдаун, тебе надо добавить право: simpletpa.cooldown.Y.X Где Y там команда и X это секунды.
+#Опции для этих команд это: tpa | tpahere | back | tpahereall
+#Пример: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
+#Это поставит кулдаун телепортации для tpa/ tpahere/ tpahereall / обратно до 300
+#Запрос будет существовать X секунд
 keep-alive: 60
