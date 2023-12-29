@@ -2,4 +2,4 @@
 Download the **config.yml** file
 
 Contributors: 
-**Alexwin32 & MuleMuleDupe**
+**Alexwin32, MuleMuleDupe, 1nfameArts**
