@@ -31,7 +31,7 @@ TpaToggle-Deactivated-Player: "&6Ты &cотключил&6 tpa для &c%player%
 TpaToggle-Activated-Player: "&6Ты &cвключил&6 tpa для &c%player%&6."
 TpaToggle-Deactivated: "&6Ты &cотключил tpa."
 TpaToggle-Activated: "&6Ты &cвключил&6 tpa."
-TpaToggled-player-Message: "&6У игрока &cотключена &6телепортация к себе!"
+TpaToggled-Player-Message: "&6У игрока &cотключена &6телепортация к себе!"
 Player-Is-Player: "&6Вы не можете телепортироваться к &cсамому себе&6!"
 Already-A-TP-Request: "&6Вы уже &cотправили запрос &6на телепортацию! Для отмены используй &c/tpcancel игрок "
 Tpa-Usage-Message: "&6Используй: &c/tpa (игрок)"
