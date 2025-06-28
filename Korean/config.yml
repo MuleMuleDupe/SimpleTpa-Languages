@@ -83,7 +83,7 @@ World-Doesnt-Exists-Or-Unloaded: "&6당신이 순간이동하려던 월드는 �
 Enabled-TpAuto: "&6지금부터 당신은 &c자동적으로&6모든 /tpa 요청을 &c수락&6하게 됩니다!"
 Disabled-TpAuto: "&6지금부터 당신은 &c수동적으로&6모든 /tpa 요청을 &c수락&6하게 됩니다!"
 Player-Has-Ignored-You: "&6그 플레이어가 당신의 순간이동 요청을 &c무시&6했습니다!"
-Player-Not-Same-World: "&6The player you have been trying to &cteleport &6is not in the same &cworld&6!"
+Player-Not-Same-World: "&6당신이 &c순간이동&6하려던 사람은 같은 &c세계에&6없습니다!"
 ## BUTTONS
 #Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
 
