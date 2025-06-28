@@ -26,7 +26,7 @@ prefix: "&c[&6SimpleTpa&c]"
 # TO DISABLE A MESSAGE - SET IT TO - NONE
 # EXAMPLE:
 # Console-Isnt-Player: "none"
-Console-Isnt-Player: "&6Console can't use &cSimpleTpa&6!"
+Console-Isnt-Player: "&6콘솔은 &cSimpleTpa&6를사용할수 없어요!"
 Disabled-World-Message: "&6여기서는 &cSimpleTpa&6를 사용할 수 없어요!"
 Teleport-Message: "&6당신은 &c%time%&6초 안에 순간이동 될 것이에요!"
 Teleport-Message-TPAUTO: "&6당신은 &c%time%&6초 후에 순간이동 할거에요! 움직이지 마세요!"
