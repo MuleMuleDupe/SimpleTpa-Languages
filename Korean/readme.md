@@ -1,4 +1,4 @@
-Version 7.3
+Version 7.6
 
 Download the config.yml file
 
