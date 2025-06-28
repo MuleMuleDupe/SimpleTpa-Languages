@@ -97,22 +97,22 @@ sound-pitch: 0.533
 Particle-Name: "EXPLOSION_NORMAL"
 
 #Accept Button Properties
-Accept-Button: "ACCEPT"
+Accept-Button: "수락"
 Accept-Button-Color: "RED"
 Accept-Button-Set-Bold: true
-Accept-Button-Description: "&6Click here to &cACCEPT &6the tp request!"
+Accept-Button-Description: "&6여기를 눌러 순간이동 요청을 &c수락&6하세요!"
 
 #Middle Button Properties
 Middle-Button: " | "
 Middle-Button-Color: "GRAY"
 Middle-Button-Set-Bold: true
-Middle-Button-Description: "&7 <- Choose between -> "
+Middle-Button-Description: "&7 <- 둘 중 선택하세요 -> "
 
 #Deny Button Properties
-Deny-Button: "DENY"
+Deny-Button: "거절"
 Deny-Button-Color: "RED"
 Deny-Button-Set-Bold: true
-Deny-Button-Description: "&6Click here to &cDENY &6the tp request!"
+Deny-Button-Description: "&6여기를 눌러 순간이동 요청을 &c거절&6하세요!"
 
 # If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
 #Disabled Worlds:
